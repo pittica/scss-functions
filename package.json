@@ -3,7 +3,7 @@
   "private": false,
   "description": "SCSS functions collection.",
   "version": "1.0.0",
-  "author":{
+  "author": {
     "name": "Lucio Benini",
     "email": "info@pittica.com",
     "url": "https://pittica.com"
@@ -29,5 +29,7 @@
     "type": "git",
     "url": "git+https://https://github.com/pittica/scss-functions.git"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
