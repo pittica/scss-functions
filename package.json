@@ -1,5 +1,5 @@
 {
-  "name": "scss-functions",
+  "name": "@pittica/scss-functions",
   "private": false,
   "description": "SCSS functions collection.",
   "version": "1.0.0",
@@ -27,7 +27,7 @@
   "main": "functions.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/pittica/scss-functions.git"
+    "url": "git+https://github.com/pittica/scss-functions.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
