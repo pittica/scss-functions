@@ -1,0 +1,35 @@
+@mixin linear-gradient($direction, $steps...) {
+  background-image: -webkit-linear-gradient($direction, $steps);
+  background-image: -moz-linear-gradient($direction, $steps);
+  background-image: -o-linear-gradient($direction, $steps);
+  
+  @if ($direction == "bottom") {
+    background-image: linear-gradient(to top, $steps);
+  } @else if ($direction == "top") {
+    background-image: linear-gradient(to bottom, $steps);
+  } @else if ($direction == "right") {
+    background-image: linear-gradient(to left, $steps);
+  } @else if ($direction == "left") {
+    background-image: linear-gradient(to right, $steps);
+  } @else {
+    background-image: linear-gradient(to #{$direction}, $steps);
+  }
+}
+
+@mixin radial-gradient($direction, $steps...) {
+  background-image: -webkit-radial-gradient($direction, $steps);
+  background-image: -moz-radial-gradient($direction, $steps);
+  background-image: -o-radial-gradient($direction, $steps);
+
+  @if ($direction == "bottom") {
+    background-image: radial-gradient(to top, $steps);
+  } @else if ($direction == "top") {
+    background-image: radial-gradient(to bottom, $steps);
+  } @else if ($direction == "right") {
+    background-image: radial-gradient(to left, $steps);
+  } @else if ($direction == "left") {
+    background-image: radial-gradient(to right, $steps);
+  } @else {
+    background-image: radial-gradient(to #{$direction}, $steps);
+  }
+}

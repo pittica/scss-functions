@@ -1,0 +1,7 @@
+@mixin icon($name, $content) {
+  .#{$name} {
+    &:before {
+      content: $content;
+    }
+  }
+}

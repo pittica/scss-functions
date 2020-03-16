@@ -1,0 +1,67 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animate(
+  $name,
+  $duration: 1s,
+  $delay: 0,
+  $timing: initial,
+  $iterations: initial,
+  $direction: normal,
+  $fill: forwards
+) {
+  -moz-animation-name: $name;
+  -moz-animation-duration: $duration;
+  -moz-animation-delay: $delay;
+  -moz-animation-timing-function: $timing;
+  -moz-animation-iteration-count: $iterations;
+  -moz-animation-direction: $direction;
+  -moz-animation-fill-mode: $fill;
+
+  -webkit-animation-name: $name;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-timing-function: $timing;
+  -webkit-animation-iteration-count: $iterations;
+  -webkit-animation-direction: $direction;
+  -webkit-animation-fill-mode: $fill;
+
+  -o-animation-name: $name;
+  -o-animation-duration: $duration;
+  -o-animation-delay: $delay;
+  -o-animation-timing-function: $timing;
+  -o-animation-iteration-count: $iterations;
+  -o-animation-direction: $direction;
+  -o-animation-fill-mode: $fill;
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $timing;
+  animation-iteration-count: $iterations;
+  animation-direction: $direction;
+  animation-fill-mode: $fill;
+}
+
+@mixin transition($property: all, $duration: 0.2s, $timing: ease, $delay: 0s) {
+  -webkit-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+  -o-transition: $property $duration $timing;
+  -ms-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
