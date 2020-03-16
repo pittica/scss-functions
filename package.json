@@ -28,5 +28,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://https://github.com/pittica/scss-functions.git"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
