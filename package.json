@@ -1,6 +1,6 @@
 {
   "name": "scss-functions",
-  "private": true,
+  "private": false,
   "description": "SCSS functions collection.",
   "version": "1.0.0",
   "author":{
