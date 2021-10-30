@@ -7,4 +7,4 @@ SCSS functions collection.
 
 ## Copyright
 
-(c) 2020, [Pittica S.r.l.s.](https://pittica.com).
+(c) 2020-2021, [Pittica S.r.l.](https://pittica.com).
